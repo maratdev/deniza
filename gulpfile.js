@@ -53,7 +53,7 @@ gulp.task('libs', function() {
 	return gulp.src([
 				'app/libs/jquery/jquery-1.11.2.min.js',
 				'app/libs/jquery.nicescroll/jquery.nicescroll.min.js',
-				//'app/libs/modernizr/modernizr.js'
+				'app/libs/modernizr/modernizr.js'
 
 			])
 			.pipe(concat('libs.min.js'))

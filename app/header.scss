@@ -2,4 +2,69 @@
 @import "sass/vars";
 @import "sass/base";
 
+@mixin outline($color){
+  outline: 0px solid $color;
+}
+
+.line-top{
+  @include outline(red);
+  background: #fff;
+  width: 100%;
+  min-height: 120px;
+  overflow: hidden;
+  border-bottom: 1px solid #cdcdcd;
+  .arrows{
+    background: url("../img/lenta_top.png") no-repeat center;
+    height: 120px;
+    @include outline(red);
+       p{
+        font-family: $default-cuprum;
+        font-size:em(25px);
+        font-weight:700;
+        color: $accent;
+        margin-top:40px;
+        text-align: center;
+        padding: 0;
+        line-height:22px;
+           span{
+             margin-top: 0;
+             font-family:$default-roboto-slab;
+             color: $black;
+             font-size:em(10px);
+           }
+      }
+
+  }
+  .callback{
+    padding-left:35px;
+    p{
+      font-family: $default-cuprum;
+      font-size:em(18px);
+      margin-top:14px;
+      margin-bottom: 5px;
+      a{
+        text-decoration: none;
+      }
+      span{
+        line-height:12px;
+        font-size:em(25.5px);
+        color: #AA0000;
+      }
+    }
+     & >a{
+        border: 1px solid $accent;
+        padding: 8px 20px;
+        color: $accent;
+        margin: 0;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover{
+          background-color: $accent;
+          color: #fff;
+          @include transition-duration(0.5s);
+        }
+    }
+
+  }
+}
 //First screen styles
