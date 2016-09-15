@@ -2,22 +2,20 @@
 @import "sass/vars";
 @import "sass/base";
 
-@mixin outline($color){
-  outline: 0px solid $color;
-}
 
-.line-top{
-  @include outline(red);
-  background: #fff;
-  width: 100%;
-  min-height: 120px;
-  overflow: hidden;
-  border-bottom: 1px solid #cdcdcd;
-  .arrows{
-    background: url("../img/lenta_top.png") no-repeat center;
-    height: 120px;
+header{
+  .line-top{
     @include outline(red);
-       p{
+    background: #fff;
+    width: 100%;
+    min-height: 120px;
+    overflow: hidden;
+    border-bottom: 1px solid #cdcdcd;
+    .arrows{
+      background: url("../img/lenta_top.png") no-repeat center;
+      height: 120px;
+      @include outline(red);
+      p{
         font-family: $default-cuprum;
         font-size:em(25px);
         font-weight:700;
@@ -26,32 +24,32 @@
         text-align: center;
         padding: 0;
         line-height:22px;
-           span{
-             margin-top: 0;
-             font-family:$default-roboto-slab;
-             color: $black;
-             font-size:em(10px);
-           }
+        span{
+          margin-top: 0;
+          font-family:$default-roboto-slab;
+          color: $black;
+          font-size:em(10px);
+        }
       }
 
-  }
-  .callback{
-    padding-left:35px;
-    p{
-      font-family: $default-cuprum;
-      font-size:em(18px);
-      margin-top:14px;
-      margin-bottom: 5px;
-      a{
-        text-decoration: none;
-      }
-      span{
-        line-height:12px;
-        font-size:em(25.5px);
-        color: #AA0000;
-      }
     }
-     & >a{
+    .callback{
+      padding-left:35px;
+      p{
+        font-family: $default-cuprum;
+        font-size:em(18px);
+        margin-top:14px;
+        margin-bottom: 5px;
+        a{
+          text-decoration: none;
+        }
+        span{
+          line-height:12px;
+          font-size:em(25.5px);
+          color: #AA0000;
+        }
+      }
+      & >a{
         border: 1px solid $accent;
         padding: 8px 20px;
         color: $accent;
@@ -63,8 +61,67 @@
           color: #fff;
           @include transition-duration(0.5s);
         }
-    }
+      }
 
+    }
+  }
+  .center-photo{
+    display: table;
+    width: 100%;
+    background: url("../img/bg.jpg") no-repeat center;
+    background-size: cover;
+    height: 900px;
+    .top_description{
+      display: table-row;
+      .top_centered{
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        .sale{
+          background: url("img/lenta_pink.png") no-repeat center;
+          width: 535px;
+          height: 100px;
+          margin: 0 auto 30px auto;
+            p{
+              font-family: $default-cuprum;
+              padding-top:14px;
+              text-transform: uppercase;
+              font-size:em(48px);
+              margin: 0;
+            }
+            span{
+              color: #fff;
+            }
+
+        }
+      }
+    }
+    h1{
+      color: #fff;
+      text-transform: uppercase;
+      font-size:75px;
+      margin: 0;
+    }
+    h2{
+      color: #fff;
+      font-family: $default-cuprum;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: em(49px);
+      margin: 0;
+    }
+    h3{
+      text-transform: uppercase;
+      margin: 0;
+      color: $accent;
+      text-align: center;
+      font-size: em(50px);
+    }
+    img{
+       padding-top:30px;
+       max-width:25%;
+    }
   }
 }
+
 //First screen styles

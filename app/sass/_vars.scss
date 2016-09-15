@@ -4,5 +4,8 @@ $default-font: "roboto", sans-serif;
 $default-cuprum: "Cuprum", sans-serif;
 $default-roboto-slab: "Roboto Slab", serif;
 $accent:#cd7d00;
-$black: #000
+$black: #000;
 
+@mixin outline($color){
+  outline: 1px solid $color;
+}

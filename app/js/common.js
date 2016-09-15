@@ -1,5 +1,7 @@
 $(function() {
 
+    $(".twentytwenty-container").twentytwenty();
+
     //Плавная прокрутка к объекту
     $(".scroll").click(function(event){
 //Перехватываем обработку по умолчанию события нажатия мыши
@@ -57,5 +59,7 @@ $(function() {
     //Плавный скролл
     //Documentation & Example: https://github.com/inuyaksa/jquery.nicescroll
     $("html").niceScroll();
+
+
 
 });

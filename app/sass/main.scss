@@ -2,8 +2,37 @@
 @import "vars";
 @import "libs";
 
-//Custom styles here
 
+//Custom styles here
+.slider-twentytwenty{
+  background: url("../img/bg-2.jpg") no-repeat ;
+  min-height: 650px;
+
+  h2{
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .twentytwenty-container{
+    margin: 10px auto;
+    width:488px;
+    border: 8px solid $accent;
+  }
+  .twentytwenty-overlay{
+    width:488px;
+  }
+}
+.price{
+  min-height:890px;
+  width: 100%;
+  @include outline(red);
+  padding-top:90px;
+    .price-sale{
+      background: rgba(255, 255, 255, 0.8);
+      height: 280px;
+      width: 100%;
+    }
+
+}
 //Load Libs SCSS
 @import "media";
-@import "app/libs/animate.css/animate.min";
+
