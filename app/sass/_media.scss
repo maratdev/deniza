@@ -6,27 +6,121 @@
 /*  Devices, Wide Screens */
 @media only screen and (max-width : 1200px){
   /**/
+  header .line-top .callback{
+    padding-left:0;
+  }
 }
 
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px){
-  /**/
+  header .line-top .callback{
+    padding-top: 20px;
+    text-align: right;
+  }
 }
 
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px){
-  /**/
+  header .center-photo{
+    h1{
+      font-size:  em(52px);
+    }
+    h2{
+      font-size: em(29px);
+    }
+    h3{
+      font-size: em(30px);
+    }
+    img{
+      max-width:35%;
+    }
+    .top_centered{
+      vertical-align:100% !important;
+    }
+  }
+  .logo{
+    img{
+      max-width: 100%;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  .callback{
+    p{
+      text-align: center;
+      margin: 0;
+      br{
+        display: none;
+      }
+    }
+  }
+
 }
 
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px){
-  /**/
+  #timerdc375c8904935dc33f41d1377f4ce577, #timerda26ed0791b9f11269662e4cbdd103e8{
+    display: none !important;
+  }
+
+  .price .price-sale{
+    height: auto;
+    span.price_txt{
+      padding-left: 15px !important;
+    }
+  }
+  header .center-photo .top_description .top_centered .sale{
+    margin-bottom: 10px;
+    p{
+      font-size:em(30px);
+      padding-top: 27px;
+
+    }
+  }
+  header .center-photo{
+    h1{
+      font-size:  em(42px);
+    }
+    h2{
+      font-size: em(19px);
+    }
+    h3{
+      font-size: em(20px);
+    }
+    img{
+      max-width:35%;
+    }
+    .top_centered{
+      vertical-align:100% !important;
+    }
+  }
+  .callback{
+    p{
+      margin: 5px;
+      br{
+        display: block;
+      }
+    }
+  }
+  .logo{
+    img{
+      max-width:75%;
+    }
+  }
+  header .line-top .callback{
+    padding-top:0;
+  }
+  footer{
+    span{
+      font-size:em(7px) !important;
+    }
+  }
 }
 
 
@@ -42,14 +136,16 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px){
-  /**/
+
 }
 
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px){
-  /**/
+  #timerfd55450ebe3fec4e0bcf2ceb5f435616, #timereb06165f3af2d3f63070c18208502f9e{
+    display: none !important;
+  }
 }
 
 

@@ -7,5 +7,5 @@ $accent:#cd7d00;
 $black: #000;
 
 @mixin outline($color){
-  outline: 1px solid $color;
+  outline: 0px solid $color;
 }

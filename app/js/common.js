@@ -1,5 +1,6 @@
 $(function() {
 
+
     $(".twentytwenty-container").twentytwenty();
 
     //Плавная прокрутка к объекту
@@ -59,6 +60,16 @@ $(function() {
     //Плавный скролл
     //Documentation & Example: https://github.com/inuyaksa/jquery.nicescroll
     $("html").niceScroll();
+
+    //Header во весь экран
+    function heightDetect(){
+        $(".center-photo").css("height", $(window).height());
+    }
+
+    heightDetect();
+    $(window).resize(function() {
+        heightDetect();
+    });
 
 
 

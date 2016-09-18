@@ -6,7 +6,9 @@
 //Custom styles here
 .slider-twentytwenty{
   background: url("../img/bg-2.jpg") no-repeat ;
-  min-height: 650px;
+  height: auto;
+  background-size: contain;
+  padding-bottom: 50px;
 
   h2{
     text-align: center;
@@ -14,24 +16,103 @@
   }
   .twentytwenty-container{
     margin: 10px auto;
-    width:488px;
+    max-width:488px;
     border: 8px solid $accent;
+
   }
-  .twentytwenty-overlay{
-    width:488px;
+  .twentytwenty-wrapper{
+    overflow: hidden;
   }
 }
 .price{
-  min-height:890px;
+  height:auto;
   width: 100%;
+  padding-bottom: 50px;
   @include outline(red);
-  padding-top:90px;
     .price-sale{
       background: rgba(255, 255, 255, 0.8);
-      height: 280px;
+      height: 320px;
       width: 100%;
+
+        .sale{
+        background: url("img/lenta_pink.png") no-repeat center;
+        max-width: 535px;
+        height: 100px;
+        margin: 0 auto 60px auto;
+        p{
+          font-family: $default-cuprum;
+          padding-top:14px;
+          text-transform: uppercase;
+          font-size:em(48px);
+          margin: 0;
+          text-align: center;
+        }
+        span{
+          padding-left: 138px;
+          font-size: 21px;
+          font-weight:bold;
+        }
+      }
+    }
+    .price-txt_border-block{
+      margin:30px auto 30px auto;
+      max-width: 440px;
+      height:auto;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.8);
+        .price-block{
+          border: 2px dashed #fff;
+          text-align: center;
+          max-width: 420px;
+          height:auto;
+          ul{
+            padding: 0;
+            li{
+              font-family: $default-cuprum;
+              list-style: none;
+              text-align: left;
+              color: #fff;
+              font-size:em(19px);
+              line-height: normal;
+              p{
+                padding-top:15px;
+                i{
+                  text-decoration:line-through;
+                }
+              }
+              img{
+                float: left;
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+    }
+}
+footer{
+  min-height: 130px;
+  background-color: #fff;
+  .arrows{
+    background: url("../img/lenta_top.png") no-repeat center;
+    height: 120px;
+    @include outline(red);
+    p{
+      font-family: $default-cuprum;
+      font-size:em(20px);
+      font-weight:700;
+      color: $accent;
+      padding-top:35px;
+      text-align: center;
+      line-height:22px;
+      span{
+        margin-top: 0;
+        font-family:$default-roboto-slab;
+        color: $black;
+        font-size:em(9px);
+      }
     }
 
+  }
 }
 //Load Libs SCSS
 @import "media";

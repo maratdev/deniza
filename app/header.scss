@@ -4,6 +4,7 @@
 
 
 header{
+  height: auto;
   .line-top{
     @include outline(red);
     background: #fff;
@@ -13,11 +14,12 @@ header{
     border-bottom: 1px solid #cdcdcd;
     .arrows{
       background: url("../img/lenta_top.png") no-repeat center;
+
       height: 120px;
       @include outline(red);
       p{
         font-family: $default-cuprum;
-        font-size:em(25px);
+        font-size:em(20px);
         font-weight:700;
         color: $accent;
         margin-top:40px;
@@ -28,7 +30,7 @@ header{
           margin-top: 0;
           font-family:$default-roboto-slab;
           color: $black;
-          font-size:em(10px);
+          font-size:em(9px);
         }
       }
 
@@ -70,7 +72,6 @@ header{
     width: 100%;
     background: url("../img/bg.jpg") no-repeat center;
     background-size: cover;
-    height: 900px;
     .top_description{
       display: table-row;
       .top_centered{
@@ -79,7 +80,8 @@ header{
         vertical-align: middle;
         .sale{
           background: url("img/lenta_pink.png") no-repeat center;
-          width: 535px;
+          background-size: contain;
+          max-width: 535px;
           height: 100px;
           margin: 0 auto 30px auto;
             p{
@@ -88,9 +90,12 @@ header{
               text-transform: uppercase;
               font-size:em(48px);
               margin: 0;
+              color: #fff;
             }
             span{
               color: #fff;
+              font-size: 21px;
+              font-weight:bold;
             }
 
         }
@@ -99,7 +104,7 @@ header{
     h1{
       color: #fff;
       text-transform: uppercase;
-      font-size:75px;
+      font-size:em(75px);
       margin: 0;
     }
     h2{

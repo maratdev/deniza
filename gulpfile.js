@@ -56,7 +56,8 @@ gulp.task('libs', function() {
 				'app/libs/modernizr/modernizr.js',
 				'app/libs/twentytwenty-master/js/jquery.event.move.js',
 				'app/libs/twentytwenty-master/js/jquery.twentytwenty.js',
-				'app/libs/paralax/parallax.min.js'
+				'app/libs/paralax/parallax.min.js',
+				'app/libs/coutdown/jquery.downCount.js'
 
 			])
 			.pipe(concat('libs.min.js'))
